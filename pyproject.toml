@@ -14,10 +14,7 @@ name = "extended_bs4"
 version = "0.0.1"
 description = "Extended version of BeautifulSoup4"
 authors = ["26b_dream <1@1.1>"]
-readme = "README.md"
-
 include = ["typings"]
-
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -25,7 +22,6 @@ beautifulsoup4 = "*"
 
 [tool.poetry.group.dev]
 optional = true
-
 
 [tool.poetry.group.dev.dependencies]
 black = "*"
