@@ -6,19 +6,20 @@ profile = "black"
 line_length = 120
 
 [tool.pylint]
-disable = "C0301"
-# C0301 - Line too long: Black makes this redundant
+disable = "C0301" # Line too long: Black makes this redundant
 
 [tool.poetry]
 name = "extended_bs4"
 version = "0.0.1"
-description = "Extended version of BeautifulSoup4"
+description = "Extended version of BeautifulSoup with extra functions. WARNING: Modifies BeautifulSoup globally."
 authors = ["26b_dream <1@1.1>"]
 include = ["typings"]
+readme = "README.md"
+license = "AGPL-3.0-only"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-beautifulsoup4 = "*"
+beautifulsoup4 = "^4.0"
 
 [tool.poetry.group.dev]
 optional = true
@@ -28,6 +29,7 @@ black = "*"
 isort = "*"
 flake8 = "*"
 pytest = "*"
+pylint = "*"
 
 [build-system]
 requires = ["poetry-core"]
