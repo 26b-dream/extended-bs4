@@ -13,9 +13,9 @@ name = "extended_bs4"
 version = "0.0.1"
 description = "Extended version of BeautifulSoup with extra functions. WARNING: Modifies BeautifulSoup globally."
 authors = ["26b_dream <1@1.1>"]
-include = ["typings"]
 readme = "README.md"
 license = "AGPL-3.0-only"
+include = ["typings"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
